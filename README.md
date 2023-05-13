@@ -28,5 +28,3 @@ The website is structured as follows:
 To use the website, simply open `index.html` in a web browser. From there, you can navigate through the different sections using the menu in the header. Feel free to explore and read the reviews of various movies and TV shows!
 
 ---
-
-Feel free to customize the README as per your preferences, adding more details about the website or providing instructions for installation and deployment.
