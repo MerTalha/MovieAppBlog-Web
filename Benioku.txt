@@ -1,0 +1,52 @@
+Benim tasarladığım site, izlediğim filmler ve dizilerin incelemelerini paylaştığım kişisel inceleme blog sayfasıdır. Sayfamda header,
+main içinde 4 section ve en altta footer olmak üzere 3 ana bölümden oluşmaktadır. 1 JavaScript ve 1 tane de jQuery script'i bulunmaktadır.
+Dosyalarım ise; ana sayfanın bulunduğu index.html, ana sayfasaya özel stil CSS kodlarının bulunduğu sytles.css, ileriye dönük olması
+amacıyla diğer html sayfalarında da kullanılacak olan ortak özelliklerin sakladığı buttons.css ve base.css bulunmaktadır. buttons.css
+içerisinde her sayfa için ortak olan buttonların CSS kodları bulunurken, base.css dosyası içinde de sayfayı bölmede, aynı satırda bulunan
+2 veya 3 içeriğin yan yana bulunmasını sağlayan container, sütun ve kolon kodları bulunmaktadır.
+
+Header içerisinde bir div içerisinde sitenin logosu ve mantıksal etiket olan nav bulunmaktadır. Nav içerisinde ise liste içerisinde sitenin
+menüleri bulunmaktadır. Bu site menüleri ise ileride yapılabilecek sayfaları düşünerek tasarladım. buttons.css dosyasında hazırladığım
+buttonları bu menülerde kullandım. Liste elemanlarının dizaynı ve sağa yaslanması style.css dosyası içerisinde yapıldı. Renk, tasarım ve 
+diğer elemanların konumları da yine aynı şekilde style.css içerisinde tanımlandı. "position: fixed" kod satırı ile de site menüsünün
+bütün sayfa boyunca en yukarıda kalması ve kullanım kolaylığı sağlanmış oldu.
+
+Main içerisinde ise 4 section bulunmaktadır. Bunlar showcase, first-start, second_box ve movies olarak isimlendirildi. 
+showcase kısmında bizi sayfanın giriş ekranı olarak karşılayan içerik bulunmaktadır. sytle.css içerisinde showcase id'sine atanan kodlarda ise arka plana bir
+resim koyuldu, resmin üzerine geçişli bir renk verildi, boyutu konumu ve resmin çerçeveye sığdırılması için ayarlamalar yapıldı. Resmin 
+ortasına denk gelecek şekilde bir hoşgeldin yazısı bulunan yazı kutusu koyuldu. Bunu kodları ve tasarımı ise yine style.css içerisinde 
+bulunmaktadır.
+first-start kısmında ise bir container div bulunmaktadır ve içerikler bu div içerisinde bulunmaktadır. container içerisinde iki tane 
+row div'i bulunmaktadır ve bir tanesi içinde de iki sütunlu bir tasarım bulunmaktadır. İlk row div'i içerisinde küçük bir tanıtım kısmı
+bulunmaktadır. Ortak bir başlık tasarımı sytles.css içerisinde tasarlandı ve bu özet kısmında da kullanıldı. İkinci row div'i içerisinde 
+ise kolonlara ortak bir class verilerek styles.css içerisinde başlıkları ve konumları düzenlendi. Siteye import edilen bir icon kütüphanesi
+kullanıldı. Burada ise o iconlardan iki tanesi kullanıldı. Style.css dosyası içerisinde renkleri tasarlandı ve hover tasarımları da 
+oluşturuldu.
+second_box kısmında ise yine row div'i kullanıldı ve iki kolonlu bir yapı oluşturuldu. Sol tarafına verilen class üzerinden style.css 
+içerisinde boyutları ayarlandı ve içerisine bir resim yerleştirildi. Sağ tarafta ise açıklama kısmı bulunmaktadır ve button.css dosyasında
+hazırlanmış olan bir button kullanılmaktadır. Burada button üzerine mouse getirildiği zaman çalışan bir jQuery kodu bulunmaktadır.
+Mouse buttonun üzerine getirildiğinde sitenin üstünde pop-up bir bildirim menüsü açılır ve siteye gitmek üzeresiniz yazar. Mouse'yi
+tekrar çektiğinizde ise siteye gitmekten vazgeçtiniz yazısı gelmektedir. Bu içerik jQuery ile oluşturuldu. Style.css içerisinde renk,
+font büyüklüğü ve konum tasarımları oluşturuldu.
+movies kısmında ise container div'i oluşturuldu ve altında row div'i oluşturuldu. Bu div altında ise üç kolonlu bir yapı oluşturuldu.
+Üç tane kart oluşturulmuştur ve bunlar yan yana hizaya getirildi. card div'i içerisinde üstte filmin kapağı altında ise card-body div'i
+içerisinde filmlerin özeti ve film sitesine gitmek için kullanılacak bir button bulunmaktadır. Bu button tasarımı button.css dosyasından
+kullanılmıştır. Style.css içerisinde resimlerin boyutu ayarlandı, card div'inin boyutu rengi ve tasarımı oluşturuldu. Mouse'nin bir kartın
+üzerine getirilmesi durumunda kartın hafif yukarı çıkarak hover oluşturuldu ve kullanıcı etkileşimi oluşturuldu. Bu kodlar yine 
+style.css içerisinde bulunmaktadır. transition kodu ile de 0.3 saniyelik bir gecikme yaratılarak daha kibar bir hareket oluşturuldu.
+
+Footer mantıksal etiketi içerisinde ise bir container div'i, ve onun içerisinde ise bir tane row div'i oluşturuldu. row içerisinde ise
+iki kolonlu bir yapı oluşturuldu. Bir kolonda sitenin standart linkleri bulunurken diğer kolonda ise sosyal medya linkleri için 
+tasarlanan bir kısım oluşturuldu. İlk kolonda liste içerisinde linkler oluşturuldu ve tasarımları styles.css içerisinde yapıldı.
+İkinci kolonda ise import edilen icon kütüphanesinden sosyal medya iconları kullanıldı. Style.css dosyası içerisinde arka planlar renkleri
+ayarlandı ve hover tasarımları oluşturuldu. 
+
+Ayrı olarak da bir tane sitenin üzerine hızlıca çıkmaya yarayan sağ altta bir icon oluşturuldu. İcon import edilen kütüphaneden kullanıldı.
+JavaScript kodu ile de sayfanın üzerine çıkması sağlanan kod hazırandı. Style.css içerisinde de html kısmında "scroll-behavior: smooth"
+kodu ile sayfada yukarıya çıkarken daha yavaş ve düzgün bir hareket elde edilmiş olundu. 
+
+Base.css içerisinde kolon sütun ve container bölümleri büyüklükleri oluşturuldu. Button.css içerisinde iki tane button tasarımı ve hover
+tasarımları bulunmaktadır. Tasarımlarda "transition-duration" kodu ile hover'ın 0.6 saniye gecikmeli gelmesi sağlandı ve bu şekilde 
+daha kibar ve modern bir hover tasarımı oluşturuldu. Style.css içerisinde ise kullanılan icon kütüphanesi ve google font import edildi.
+Button.css ve base.css ise bu dosyaya import edildi ve bu dosya üzerinden html'de kullanıldı. Bu şekilde kodun daha düzenli ve verimli
+olması sağlandı.s
